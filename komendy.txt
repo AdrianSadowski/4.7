@@ -1,0 +1,3 @@
+node_modules/.bin/browser-sync start --server --files "css/*.css" "*.html"
+git add . && git commit -m "Tytuł commita"
+git push
