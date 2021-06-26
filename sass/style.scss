@@ -2,17 +2,41 @@ $color-main: #2c3e50;
 $color-light: #ffffff;
 $color-gold: #FFD700;
 $color-grey: #808385;
+$color-header: #c8d6e5;
 body {
     text-align: center;
 }
 .container {
-    max-width: 80%;
+    max-width: 1140px;
+    padding: 0 20px;
+    text-align: center;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
     p {
         color: #808385;
     }
 }
+.header {
+    background-image: url("https://i.postimg.cc/FsVQF3kz/pexels-l-via-bittencourt-4636525.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.header-box {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h3, h1 {
+        color: $color-header;
+    }
+}
 .btn {
-    background-color: $color-gold; /* Green */
+    background-color: $color-gold;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -58,12 +82,13 @@ body {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        width: 10em;
-
-
     }
 }
 .title {
+    text-align: center;
+    width: 100%;
+}
+.h-title {
     font-size: 46px;
 }
 .p-title {
