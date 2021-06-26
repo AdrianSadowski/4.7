@@ -106,6 +106,18 @@ body {
     }
 }
 .portfolio {
+    background-color: #f7f1e3;
+}
+.portfolio-image img {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.portfolio-description {
+    margin-bottom: 70px;
+}
+/*.portfolio {
     position: relative;
     max-height: 200px;
     .portfolio-box {
@@ -126,9 +138,9 @@ body {
             position: absolute;
         }
     }
-}
+}*/
 
-/* footer {
+footer {
     a {
         text-decoration: none;
         color: $color-grey;
@@ -136,6 +148,7 @@ body {
     ul {
         list-style-type: none;
         text-decoration: none;
+        display: flex;
         a {
             color: $color-gold;
             font-size: 32px;
@@ -145,10 +158,8 @@ body {
 
         display: inline;
         padding: 0 10px;
-        justify-content: center;
-        align-items: center;
     }
     .fab:hover {
         transform: scale(1.5);
     }
-} */
+}
