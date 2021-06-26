@@ -82,12 +82,16 @@ body {
 }
 .portfolio {
     position: relative;
+    .box {
+        position: relative;
+        display: flex;
+    }
     .portfolio-image {
         position: absolute;
-        max-width: 250px;
+        max-width: 300px;
         min-height: 300px;
-        width: 33,333%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         z-index: 1;
         img {
             width: 100%;
