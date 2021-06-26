@@ -82,14 +82,15 @@ body {
 }
 .portfolio {
     position: relative;
+    max-height: 200px;
     .portfolio-box {
         position: relative;
         display: flex;
     }
     .portfolio-image {
         position: absolute;
-        max-width: 300px;
-        min-height: 300px;
+        max-width: 200px;
+        min-height: 200px;
         width: 80%;
         height: 80%;
         z-index: 1;
@@ -101,3 +102,28 @@ body {
         }
     }
 }
+
+/* footer {
+    a {
+        text-decoration: none;
+        color: $color-grey;
+    }
+    ul {
+        list-style-type: none;
+        text-decoration: none;
+        a {
+            color: $color-gold;
+            font-size: 32px;
+        }
+    }
+    li {
+
+        display: inline;
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fab:hover {
+        transform: scale(1.5);
+    }
+} */
