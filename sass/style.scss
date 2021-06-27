@@ -3,8 +3,11 @@ $color-light: #ffffff;
 $color-gold: #FFD700;
 $color-grey: #808385;
 $color-header: #c8d6e5;
+$font-text: 'Josefin Sans', sans-serif;
+$font-header: 'Yeseva One', cursive;
 body {
     text-align: center;
+    font-family: $font-text;
 }
 .container {
     max-width: 1140px;
@@ -33,6 +36,7 @@ body {
     transform: translate(-50%, -50%);
     h3, h1 {
         color: $color-header;
+        font-family: $font-header;
     }
 }
 .btn {
@@ -53,6 +57,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: $font-header;
     .flex {
         display: flex;
         position: relative;
@@ -79,11 +84,12 @@ body {
         text-decoration: none;
     }
     .collapse {
-        display: inline;
-        
+        display: flex;
+
     }
 }
 .title {
+    font-family: $font-header;
     text-align: center;
     width: 100%;
 }
@@ -111,8 +117,9 @@ body {
     background-color: #f1e5c7;
 }
 .portfolio-image img {
-    height: 300px;
-    width: 300px;
+    margin-top: 10px;
+    height: 250px;
+    width: 250px;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -146,6 +153,30 @@ footer {
     }
     .fab:hover {
         transform: scale(1.5);
+    }
+}
+@media (max-width:820px) {
+    .header{
+        nav {
+            flex-direction: column;
+        }
+        ul.collapse {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            padding-left: 0;
+            flex-direction: column;
+        }
+        .header-box {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 55%);
+        }
+        .navbar-brand {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 
